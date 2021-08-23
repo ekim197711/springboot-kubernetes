@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-08-22T21:31:55Z"
+  name: myapp
+  namespace: mike
+  resourceVersion: "560004"
+  uid: 43df0860-f5d8-4775-8d07-ec05c3823978
+spec:
+  clusterIP: 10.108.118.1
+  clusterIPs:
+    - 10.108.118.1
+  externalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - nodePort: 32421
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: myapp
+  sessionAffinity: None
+  type: LoadBalancer
