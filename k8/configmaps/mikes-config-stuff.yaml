@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mikes-config-stuff
+  namespace: mike
+data:
+  important-config.yaml: |
+    dev:
+      port: 9080
+      host: localhost
+
+    production:
+      port: 10000
+      host: mikesproductionserver
+
+    db:
+      user: mike
+      pwd: abc123
+    other-config.yaml: |
+      dev:
+      port: 19080
+      host: localhost
+
+    production:
+      port: 110000
+      host: mikesproductionserver
+
+    db:
+      user: mike2
+      pwd: aaaaabc123

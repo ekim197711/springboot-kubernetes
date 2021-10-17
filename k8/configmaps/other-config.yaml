@@ -1,0 +1,11 @@
+dev:
+        port: 19080
+        host: localhost
+
+production:
+        port: 110000
+        host: mikesproductionserver
+
+db:
+        user: mike2
+        pwd: aaaaabc123
